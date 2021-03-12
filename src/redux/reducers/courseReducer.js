@@ -12,6 +12,7 @@
    
 
 */
+//with the default export for function courseReducer, we can decide what to name it when you import it.
 export default function courseReducer (state =[], action){
    switch (action.type)
    {
