@@ -5,7 +5,11 @@
    All reducers accept state and an action as their arguments.  For this state argument, we need to decide  how we want
    to initialize state.  We will use the defautl argument syntax to specify that states should be initialized to an
    empty array because this will end up storing an array of courses.
-   Inside the reducer, we will create a switch statement taht looks at the action type that gets passed in
+   Inside the reducer, we will create a switch statement taht looks at the action type that gets passed in.
+   Each Reducer handles a "slice" of a state (a portion of the entire Redux store). We are going to have multiple reducers in
+   our application , we will create our root reducer that  will compose our different reducers together.
+   Create index.js in reducers folder
+   
 
 */
 export default function courseReducer (state =[], action){
